@@ -5,30 +5,74 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <title>Document</title>
+  <style>
+    .input{
+      width:100%;
+      border:2px solid #aaa;
+      border-radius:4px;
+      margin:8px 0;
+      outline:none;
+      padding:8px;
+      box-sizing:border-box;
+      transition:.3s;
+    }
+
+    input[type=text]:focus{
+      border-color:dodgerBlue;
+      box-shadow:0 0 8px 0 dodgerBlue;
+    }
+    .img:hover{
+      border: solid red 2px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
+<div class="container" style="text-align: center">
+<!--  text-->
   <div class="row mt-4">
     <div style="text-align: center">
-      <i class="fa-solid fa-pen-nib"></i>
-      <svg xmlns="http://www.w3.org/2000/svg" style="color: red" width="25" height="30" fill="currentColor" class="bi bi-pen"
-           viewBox="0 0 16 16">
-        <path
-          d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color: red" width="25" height="30">
+        <path style="color: red"   d="M368.4 18.34C390.3-3.526 425.7-3.526 447.6 18.34L493.7 64.4C515.5 86.27 515.5 121.7 493.7 143.6L437.9 199.3L312.7 74.06L368.4 18.34zM417.4 224L371.4 377.3C365.4 397.2 350.2 413 330.5 419.6L66.17 508.2C54.83 512 42.32 509.2 33.74 500.9L187.3 347.3C193.6 350.3 200.6 352 207.1 352C234.5 352 255.1 330.5 255.1 304C255.1 277.5 234.5 256 207.1 256C181.5 256 159.1 277.5 159.1 304C159.1 311.4 161.7 318.4 164.7 324.7L11.11 478.3C2.809 469.7-.04 457.2 3.765 445.8L92.39 181.5C98.1 161.8 114.8 146.6 134.7 140.6L287.1 94.6L417.4 224z"/></svg>
     </div>
-    <div style="text-align: center" class="mb-2">Choose a title for this podcast</div>
+    <div style="text-align: center;color: #3232de" class="mb-2">Choose a title for this podcast : <i class="fa fa-question-circle"></i></div>
     <div style="text-align: center">
-      <input type="text" style="width:40%;border: solid #3232de 2px;border-radius: 10px"
+      <input class="input" type="text" style="width:40%;border: solid #3232de 2px;border-radius: 10px"
              placeholder="Title of your podcast of 70 chractors max">
     </div>
   </div>
+
+<!--template  -->
+  <div class="row mt-4">
+    <div style="text-align: center;color: #3232de" class="mb-2">Choose a template to create your podcast : <i class="fa fa-question-circle"></i></div>
+<div>
+<span> <a href=""><img src="img/temp.png"  class="img" alt="" style="width: 30%"></a></span>
+<span> <a href=""><img  class="img" src="img/temp1.png" alt="" style="width: 30%"></a></span>
 </div>
+
+  </div>
+
+
+  <!--music  -->
+  <div class="row mt-4">
+    <div><i class="fa fa-guitar" style="font-size: 40px;color: red"></i></div>
+    <div style="text-align: center;color: #3232de" class="mb-2">Background Music : <i class="fa fa-question-circle"></i></div>
+    <div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
 
 
 </body>
