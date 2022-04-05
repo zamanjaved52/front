@@ -79,8 +79,8 @@
 
     section {
       padding: 50px ;
-      max-width: 1000px;
-      height: 450px;
+      /* max-width: 1000px;
+      height: 450px; */
       margin: 30px auto;
       background:white;
       background:rgba(255,255,255,0.9);
@@ -109,16 +109,12 @@
       margin-top:0;
     }
 
-
-
-
-
-
-
   </style>
 </head>
 <body>
 
+
+  
 <div class="container" style="text-align: center">
   <!--  text-->
 <!--  <div class="row mt-4">-->
@@ -155,9 +151,8 @@
 <!--  </div>-->
 
 </div>
-
+<div>
 <div id="svg_wrap"></div>
-
 
 <section>
   <!--  text-->
@@ -248,12 +243,12 @@
   <p>General condtitions</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </section>
-
+<div style="position: fixed;bottom: 0;left: 70vw;">
 <div class="button" id="prev">&larr; Previous</div>
-<div style="float: right" class="button" id="next">Next &rarr;</div>
+<div style="right: 50%" class="button" id="next">Next &rarr;</div>
 <div class="button" id="submit">Agree and send application</div>
-
-
+</div>
+</div>
 <script>
   $( document ).ready(function() {
     var base_color = "rgb(230,230,230)";
@@ -353,5 +348,7 @@
 
   });
 </script>
-</body>
+
+
+
 </html>
