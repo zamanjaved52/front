@@ -9,7 +9,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+<!--img-->
   <title>Document</title>
   <style>
     .input {
@@ -115,9 +115,457 @@
     </div>
 
   </div>
+
+
+<!--  Graph-->
+  <div class="row mt-4" style="text-align: center">
+    <div><img src="img/camera.png" alt="" style="width: 50px"></div>
+    <div style="text-align: center;color: #3232de" class="mb-2">Graph Customization : <i class="fa fa-question-circle"></i>
+    </div>
+
+   <div class="col-sm-6 col-xs-6 col-lg-6 col-xl-6 col-md-6 col-xl-6">
+      <span> <input type="color"></span><span style="padding-left: 50px;font-size: 15px">
+    Text Color</span>
+     </div>
+    <div class="col-sm-6 col-xs-6 col-lg-6 col-xl-6 col-md-6 col-xl-6">
+       <input type="color"><span style="padding-left: 50px;margin-top: 50px;font-size: 15px">
+    Background Color</span>
+     </div>
+    <div class="col-sm-6 col-xs-6 col-lg-6 col-xl-6 col-md-6 col-xl-6">
+      <span> <input type="color"></span><span style="padding-left:35px;font-size: 15px">
+    Text Shadow</span>
+     </div>
+    <div class="col-sm-6 col-xs-6 col-lg-6 col-xl-6 col-md-6 col-xl-6">
+       <input type="color"><span style="padding-left: 35px;margin-top: 50px;font-size: 15px">
+    Background Opacity</span>
+     </div>
+
+<!---your logo-->
+<div class="mt-4">
+  <img src="img/pin.png" alt="" style="width: 50px">
+  <input type="file" id="pro-image" name="pro-image" style="color:green;">
+  <span>Your Logo</span>
+
+
+
+<!-- logo -->
+  <style>
+    .preview-images-zone {
+      width: 100%;
+      border: 1px solid #3232de;
+      min-height: 100px;
+      /* display: flex; */
+      padding: 5px 5px 0px 5px;
+      position: relative;
+      overflow:auto;
+    }
+    .preview-images-zone > .preview-image:first-child {
+   /*   height: 185px;
+      width: 185px;
+      position: relative;
+      margin-right: 5px;*/
+    }
+    .preview-images-zone > .preview-image {
+      height: 90px;
+      width: 90px;
+      position: relative;
+      margin-right: 5px;
+      float: left;
+      margin-bottom: 5px;
+    }
+    .preview-images-zone > .preview-image > .image-zone {
+      width: 100%;
+      height: 100%;
+    }
+    .preview-images-zone > .preview-image > .image-zone > img {
+      width: 100%;
+      height: 100%;
+    }
+    .preview-images-zone > .preview-image > .tools-edit-image {
+      position: absolute;
+      z-index: 100;
+      color: #fff;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      display: none;
+    }
+    .preview-images-zone > .preview-image > .image-cancel {
+      font-size: 18px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+      display: none;
+      z-index: 100;
+    }
+    .preview-image:hover > .image-zone {
+      cursor: move;
+      opacity: .5;
+    }
+    .preview-image:hover > .tools-edit-image,
+    .preview-image:hover > .image-cancel {
+      display: block;
+    }
+    .ui-sortable-helper {
+      width: 90px !important;
+      height: 90px !important;
+    }
+
+    
+  </style>
+
+  <!-- Latest compiled and minified JavaScript -->
+
+
+    <fieldset class="form-group">
+      <a href="javascript:void(0)" onclick="$('#pro-image').click()"></a>
+    </fieldset>
+    <div class="preview-images-zone">
+      <div class="preview-image preview-show-1">
+        <div class="image-cancel" data-no="1">x</div>
+        <div class="image-zone"><img id="pro-img-3" src="http://i.stack.imgur.com/WCveg.jpg"></div>
+        <div class="tools-edit-image"><a href="javascript:void(0)" data-no="1" class="btn btn-light btn-edit-image">edit</a></div>
+      </div>
+      <div class="preview-image preview-show-2">
+        <div class="image-cancel" data-no="2">x</div>
+        <div class="image-zone"><img id="pro-img-2" src="http://i.stack.imgur.com/WCveg.jpg"></div>
+        <div class="tools-edit-image"><a href="javascript:void(0)" data-no="2" class="btn btn-light btn-edit-image">edit</a></div>
+      </div>
+      <div class="preview-image preview-show-3">
+        <div class="image-cancel" data-no="3">x</div>
+        <div class="image-zone"><img id="pro-img-3" src="http://i.stack.imgur.com/WCveg.jpg"></div>
+        <div class="tools-edit-image"><a href="javascript:void(0)" data-no="3" class="btn btn-light btn-edit-image">edit</a></div>
+      </div>
+    </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</div>
+  </div>
+
+<!-- background -->
+<div class="row mt-4" style="text-align: center">
   
+  <div style="text-align: center;color: #3232de" class="mb-2">
+    <span><img src="img/can.png" alt="" style="width: 50px"></span>
+    Background : <i class="fa fa-question-circle"></i>
+  </div>
+
+  <div>
+    <style>
+    
+
+.box {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+}
+
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.box-tools {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.dropzone-wrapper {
+
+  border: 2px dashed #91b0b3;
+  background: #5a5afb;
+  color: #92b0b3;
+  position: relative;
+  height: 150px;
+}
+
+.dropzone-desc {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 40%;
+  top: 50px;
+  font-size: 16px;
+}
+
+.dropzone,
+.dropzone:focus {
+  position: absolute;
+  outline: none !important;
+  width: 100%;
+  height: 150px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+
+.preview-zone {
+  text-align: center;
+}
+
+.preview-zone .box {
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.container {
+  padding: 50px 10%;
+}
+
+.box {
+  position: relative;
+  background: #ffffff;
+  width: 100%;
+}
+
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.box-tools {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.dropzone-wrapper {
+  border: 2px dashed #91b0b3;
+  color: #92b0b3;
+  position: relative;
+  height: 150px;
+}
+
+.dropzone-desc {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 40%;
+  top: 50px;
+  font-size: 16px;
+}
+
+.dropzone,
+.dropzone:focus {
+  position: absolute;
+  outline: none !important;
+  width: 90%;
+  height: 150px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+.preview-zone {
+  text-align: center;
+}
+
+.preview-zone .box {
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+    </style>
+    <section>
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <!-- <label class="control-label">Upload File</label> -->
+                <div class="preview-zone hidden">
+                  <div class="box box-solid">
+                    <div class="box-header with-border">
+                      <!-- <div><b>Preview</b></div> -->
+                      <div class="box-tools pull-right">
+                        <!-- <button type="button" class="btn btn-danger btn-xs remove-preview">
+                          <i class="fa fa-times"></i> Reset This Form
+                        </button> -->
+                      </div>
+                    </div>
+                    <div class="box-body"></div>
+                  </div>
+                </div>
+                <div class="dropzone-wrapper">
+                  <div class="dropzone-desc">
+                    <i class="glyphicon glyphicon-download-alt"></i>
+                    <p style="color: white;">Choose an image file or drag it here.</p>
+                    <input type="file" style="color: white;"">
+                  </div>
+                  <input type="file" name="img_logo" class="dropzone">
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <button type="submit" class="btn btn-primary pull-right">Upload</button> -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    
+    <script src="assets/app.js"></script>
+  </div>
+<script>
+  "use strict";
+function dragNdrop(event) {
+    var fileName = URL.createObjectURL(event.target.files[0]);
+    var preview = document.getElementById("preview");
+    var previewImg = document.createElement("img");
+    previewImg.setAttribute("src", fileName);
+    preview.innerHTML = "";
+    preview.appendChild(previewImg);
+}
+function drag() {
+    document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+}
+function drop() {
+    document.getElementById('uploadFile').parentNode.className = 'dragBox';
+}
+</script>
+
+
+<!-- and OR -->
+<div>
+  <center>
+  <div class="input-group" style="width: 40%;">
+    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-outline-primary" style="background: #3232de;color: white;">search</button>
+  </div></center><br>
+</div>
+<div style="border: #3232de 1px solid;text-align: left;"class="mb-2">
+  <span> <a href=""><img src="img/temp.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+  <button class="btn btn-primary">Load more</button>
+</div>
+<!-- new change -->
+<div style="border: #3232de 1px solid;text-align: left;"class="mt-2">
+<table style="width: 100%;">
+  <tr>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+    </td>
+    <td style="float: right;">  <a href=""><button class="btn btn-danger mt-2">Delete</button></a>
+    </td>
+  </tr>
+  <tr>
+    <td><span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+    </td>
+    <td style="float: right;">  <a href=""><button class="btn btn-danger mt-2">Delete</button></a>
+    </td>
+    
+  </tr>
+  <tr>
+    <td><span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+    </td>
+    <td style="float: right;">  <a href=""><button class="btn btn-danger mt-2">Delete</button></a>
+    </td>
+    
+  </tr>
+  <tr>
+    <td><span> <a href=""><img src="img/temp1.png" class="img mt-2 mb-2" alt="" style="width:100px"></a></span>
+    </td>
+    <td style="float: right;">  <a href=""><button class="btn btn-danger mt-2">Delete</button></a>
+    </td>
+    
+  </tr>
+</table>
 </div>
 
+<!--  -->
+</div>
 
+</div>
+
+<script>
+
+  $(document).ready(function() {
+    document.getElementById('pro-image').addEventListener('change', readImage, false);
+
+    $( ".preview-images-zone" ).sortable();
+
+    $(document).on('click', '.image-cancel', function() {
+      let no = $(this).data('no');
+      $(".preview-image.preview-show-"+no).remove();
+    });
+  });
+
+
+  var num = 0;
+  function readImage() {
+    if (window.File && window.FileList && window.FileReader) {
+      var files = event.target.files; //FileList object
+      var output = $(".preview-images-zone");
+
+      for (let i = 0; i < files.length; i++) {
+        var file = files[i];
+        var checkdiv = $('div.preview-image').length;
+        // lemit line
+        if (num <= 5 || checkdiv <= 5){
+
+          var num = checkdiv;
+          if (!file.type.match('image')) continue;
+
+          var picReader = new FileReader();
+
+          picReader.addEventListener('load', function (event) {
+            var picFile = event.target;
+            var html =  '<div class="preview-image preview-show-' + num + '">' +
+              '<div class="image-cancel" data-no="' + num + '">x</div>' +
+              '<div class="image-zone"><img id="pro-img-' + num + '" src="' + picFile.result + '"></div>' +
+              '<div class="tools-edit-image"><a href="javascript:void(0)" data-no="' + num + '" class="btn btn-light btn-edit-image">edit</a></div>' +
+              '</div>';
+
+            output.append(html);
+            num = num + 1;
+          });
+        }
+        picReader.readAsDataURL(file);
+      }
+      $("#pro-image").val('');
+    } else {
+      console.log('Browser not support');
+    }
+  }
+
+
+</script>
 </body>
 </html>
