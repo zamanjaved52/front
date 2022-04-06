@@ -1,5 +1,116 @@
 <!doctype html>
 <html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<style>
+
+
+  /* external.css */
+  *{
+    padding:0; margin:0; border:0; box-sizing:border-box;
+  }
+
+  /*input{*/
+  /*  font:22px Tahoma, Geneva, sans-serif; padding:3px;*/
+  /*}*/
+  /*#text{*/
+  /*  width:calc(100% - 20px); height:calc(100% - 70px); font:22px Tahoma, Geneva, sans-serif; padding:3px 5px; margin:10px;*/
+  /*}*/
+  #undoRedoSave{
+    text-align:right;
+  }
+  input[type=button]{
+    padding:0 7px; border-radius:5px; margin-right:10px; border:2px solid #ccc;
+  }
+  input[type=button].saved{
+    border:2px solid #700;
+  }
+
+  /*toggle switch button style*/
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <head>
   <meta charset="UTF-8">
@@ -196,7 +307,7 @@
 
     </div>
   </section>
-
+<!--section 4-->
   <section>
 
     <!--  text content-->
@@ -207,10 +318,191 @@
       </div>
 
     </div>
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" style="border: solid black 1px;margin-top: 3px; background: whitesmoke">
+          <!--      <div id='undoRedoSave'>-->
+          <!--      <button id='undo' type='button'>-->
+          <!--        <img style="height: 23px" src="img/undo.png" alt="">-->
+          <!--      </button>-->
+          <!--      <button id='redo' type='button'>-->
+          <!--        <img style="height: 23px" src="img/redo.png" alt="">-->
+          <!--      </button>-->
 
+          <select  name="cars"  style="margin-left: 10px">
+            <option selected value="volvo">select</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+
+          <select  name="cars" style="margin-left: 10px; background: whitesmoke">
+            <option selected value="volvo">pause</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-left: -15px;">
+        <textarea name="text" id="summernote"></textarea>
+      </div>
+
+      <div  style="align-items: center">
+
+
+        <center> Content length</center>
+      </div>
+      <div style="border: solid black 1px; margin-top: 15px">
+        <input type="text" style="width: 100%; padding-bottom: 3px">
+      </div>
+
+      <div>
+        <center> Your sentence contains 0 words. Your sentence is short. your content will be big on the slide.</center>
+      </div>
+
+      <!--    <div style="margin-left: 73px; margin-top: 13px">-->
+
+      <!--    </div>-->
+
+      <div class="row">
+
+        <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+          <center><u>Language</u></center>
+          <div style="margin-left: 73px;">
+            <img src="" alt="">
+
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
+              <option selected value="select">select</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+
+            </select>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+          <center><u>Voice 1</u></center>
+          <div style="margin-left: 73px;">
+            <img src="" alt="">
+
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
+              <option selected value="select">select</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+
+            </select>
+
+          </div>
+
+
+        </div>
+
+        <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+          <center><u>Voice 2</u></center>
+          <div style="margin-left: 73px;">
+            <img src="" alt="">
+
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
+              <option selected value="select">select</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+
+            </select>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="jumbotron" style="margin-top: 8px">
+
+        <div class="row">
+
+          <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+            <center><u>Speech the Text</u></center>
+            <div style="margin-left: 120px;margin-top: 10px">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+            <center><u>Audio file only</u></center>
+            <div style="margin-left: 120px;margin-top: 10px">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+            <center><u>Display the text</u></center>
+            <div style="margin-left: 125px;margin-top: 10px">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    <script>
+      $('#summernote').summernote({
+
+        height: 50,
+        width: 1140,
+        popover: {
+
+          air: [
+            ['color', ['color']],
+            ['font', ['bold', 'underline', 'clear']]
+          ]
+
+        }
+
+      });
+    </script>
   </section>
 
-  <!-- 5 -->
+  <!-- 5 section -->
   <section>
     <!--  Graph-->
     <div class="row mt-4" style="text-align: center">
@@ -360,7 +652,272 @@
         <span><img src="img/can.png" alt="" style="width: 50px"></span>
         Background : <i class="fa fa-question-circle"></i>
       </div>
+      <div>
+        <style>
 
+
+          .buttonn {
+            background: #005f95;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            display: inline-block;
+            font-size: 19px;
+            font-weight: bolder;
+            letter-spacing: 0.02em;
+            padding: 10px 20px;
+            text-align: center;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.2s;
+          }
+
+          .btn:hover {
+            background: #4499c9;
+          }
+
+          .btn:active {
+            background: #49ADE5;
+          }
+
+
+          #file-drag {
+            border: 2px dashed #555;
+            border-radius: 7px;
+            color: white;
+            background: #49ADE5;
+            cursor: pointer;
+            display: block;
+            font-weight: bold;
+            margin: 1em 0;
+            padding: 3em;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+          }
+
+          #file-drag:hover {
+            background: #ddd;
+          }
+
+          #file-drag:hover,
+          #file-drag.hover {
+            border-color: #3070A5;
+            border-style: solid;
+            box-shadow: inset 0 3px 4px #888;
+            color: #3070A5;
+          }
+
+          #file-progress {
+            display: none;
+            margin: 1em auto;
+            width: 100%;
+          }
+
+          #file-upload-btn {
+            margin: auto;
+          }
+
+          #file-upload-btn:hover {
+            background: #4499c9;
+          }
+
+          #file-upload-form {
+            margin: auto;
+            width: 100%;
+          }
+
+          progress {
+            appearance: none;
+            background: #eee;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+            height: 40px;
+          }
+
+          progress[value]::-webkit-progress-value {
+            background: -webkit-linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+            -webkit-linear-gradient(right,
+              #005f95,
+              #07294d);
+            background: linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+            linear-gradient(right,
+              #005f95,
+              #07294d);
+            background-size: 60px 30px, 100% 100%, 100% 100%;
+            border-radius: 3px;
+          }
+
+          progress[value]::-moz-progress-bar {
+            background: -moz-linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+            -moz-linear-gradient(right,
+              #005f95,
+              #07294d);
+            background: linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+            linear-gradient(right,
+              #005f95,
+              #07294d);
+            background-size: 60px 30px, 100% 100%, 100% 100%;
+            border-radius: 3px;
+          }
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+          }
+        </style>
+
+        <form id="file-upload-form" action="">
+          <label for="" id="file-drag">
+            Select a file to upload
+            <br/>OR
+            <br/>Drag a file into this box
+
+            <br/><br/><span id="file-upload-btn" class="buttonn">Add a file</span>
+          </label>
+
+          <progress id="file-progress" value="0">
+            <span>0</span>%
+          </progress>
+
+          <output for="file-upload" id="messages"></output>
+        </form>
+        <script>
+          (function () {
+            function Init() {
+              var fileSelect = document.getElementById('file-upload'),
+                fileDrag = document.getElementById('file-drag'),
+                submitButton = document.getElementById('submit-button');
+
+              fileSelect.addEventListener('change', fileSelectHandler, false);
+
+              // Is XHR2 available?
+              var xhr = new XMLHttpRequest();
+              if (xhr.upload) {
+                // File Drop
+                fileDrag.addEventListener('dragover', fileDragHover, false);
+                fileDrag.addEventListener('dragleave', fileDragHover, false);
+                fileDrag.addEventListener('drop', fileSelectHandler, false);
+              }
+            }
+
+            function fileDragHover(e) {
+              var fileDrag = document.getElementById('file-drag');
+
+              e.stopPropagation();
+              e.preventDefault();
+
+              fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
+            }
+
+            function fileSelectHandler(e) {
+              // Fetch FileList object
+              var files = e.target.files || e.dataTransfer.files;
+
+              // Cancel event and hover styling
+              fileDragHover(e);
+
+              // Process all File objects
+              for (var i = 0, f; f = files[i]; i++) {
+                parseFile(f);
+                uploadFile(f);
+              }
+            }
+
+            function output(msg) {
+              var m = document.getElementById('messages');
+              m.innerHTML = msg;
+            }
+
+            function parseFile(file) {
+              output(
+                '<ul>'
+                + '<li>Name: <strong>' + encodeURI(file.name) + '</strong></li>'
+                + '<li>Type: <strong>' + file.type + '</strong></li>'
+                + '<li>Size: <strong>' + (file.size / (1024 * 1024)).toFixed(2) + ' MB</strong></li>'
+                + '</ul>'
+              );
+            }
+
+            function setProgressMaxValue(e) {
+              var pBar = document.getElementById('file-progress');
+
+              if (e.lengthComputable) {
+                pBar.max = e.total;
+              }
+            }
+
+            function updateFileProgress(e) {
+              var pBar = document.getElementById('file-progress');
+
+              if (e.lengthComputable) {
+                pBar.value = e.loaded;
+              }
+            }
+
+            function uploadFile(file) {
+
+              var xhr = new XMLHttpRequest(),
+                fileInput = document.getElementById('class-roster-file'),
+                pBar = document.getElementById('file-progress'),
+                fileSizeLimit = 1024;	// In MB
+              if (xhr.upload) {
+                // Check if file is less than x MB
+                if (file.size <= fileSizeLimit * 1024 * 1024) {
+                  // Progress bar
+                  pBar.style.display = 'inline';
+                  xhr.upload.addEventListener('loadstart', setProgressMaxValue, false);
+                  xhr.upload.addEventListener('progress', updateFileProgress, false);
+
+                  // File received / failed
+                  xhr.onreadystatechange = function (e) {
+                    if (xhr.readyState == 4) {
+                      // Everything is good!
+
+                      // progress.className = (xhr.status == 200 ? "success" : "failure");
+                      // document.location.reload(true);
+                    }
+                  };
+
+                  // Start upload
+                  xhr.open('POST', document.getElementById('file-upload-form').action, true);
+                  xhr.setRequestHeader('X-File-Name', file.name);
+                  xhr.setRequestHeader('X-File-Size', file.size);
+                  xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+                  xhr.send(file);
+                } else {
+                  output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
+                }
+              }
+            }
+
+            // Check for the various File API support.
+            if (window.File && window.FileList && window.FileReader) {
+              Init();
+            } else {
+              document.getElementById('file-drag').style.display = 'none';
+            }
+          })();
+        </script>
+      </div>
       <div>
         <style>
           .box {
@@ -488,6 +1045,7 @@
             border-radius: 0;
             margin-bottom: 0;
           }
+
         </style>
         <section>
           <form action="" method="POST" enctype="multipart/form-data">
@@ -513,7 +1071,7 @@
                       <div class="dropzone-desc">
                         <i class="glyphicon glyphicon-download-alt"></i>
                         <p style="color: white;">Choose an image file or drag it here.</p>
-                        <input type="file" style="color: white;"">
+                        <input type="file" style="color: white;">
                       </div>
                       <input type=" file" name="img_logo" class="dropzone">
                     </div>
