@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
@@ -12,11 +11,8 @@
 
 
   /* external.css */
-  * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  *{
+    padding:0; margin:0; border:0; box-sizing:border-box;
   }
 
   /*input{*/
@@ -25,19 +21,14 @@
   /*#text{*/
   /*  width:calc(100% - 20px); height:calc(100% - 70px); font:22px Tahoma, Geneva, sans-serif; padding:3px 5px; margin:10px;*/
   /*}*/
-  #undoRedoSave {
-    text-align: right;
+  #undoRedoSave{
+    text-align:right;
   }
-
-  input[type=button] {
-    padding: 0 7px;
-    border-radius: 5px;
-    margin-right: 10px;
-    border: 2px solid #ccc;
+  input[type=button]{
+    padding:0 7px; border-radius:5px; margin-right:10px; border:2px solid #ccc;
   }
-
-  input[type=button].saved {
-    border: 2px solid #700;
+  input[type=button].saved{
+    border:2px solid #700;
   }
 
   /*toggle switch button style*/
@@ -74,13 +65,13 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #0d6efd;
     -webkit-transition: .4s;
     transition: .4s;
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #f8f9fa;
   }
 
 
@@ -102,6 +93,30 @@
 </style>
 
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+=======
+>>>>>>> 0d062df492faf4b82034db63e8a0d4279aa5b997
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -114,56 +129,6 @@
 </head>
 
 <body>
-
-<!--navbar-->
-<style>
-  a{
-    color: white !important;
-  }
-</style>
-<nav class="navbar navbar-expand-lg  bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-<!--end navbar-->
-
-
-
-
-
-
-
 
 
 <!-- update -->
@@ -346,7 +311,7 @@
 
     </div>
   </section>
-  <!--section 4-->
+<!--section 4-->
   <section>
 
     <!--  text content-->
@@ -357,132 +322,72 @@
       </div>
 
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"
-           style="border: solid black 1px;margin-top: 3px; background: whitesmoke">
-        <!--      <div id='undoRedoSave'>-->
-        <!--      <button id='undo' type='button'>-->
-        <!--        <img style="height: 23px" src="img/undo.png" alt="">-->
-        <!--      </button>-->
-        <!--      <button id='redo' type='button'>-->
-        <!--        <img style="height: 23px" src="img/redo.png" alt="">-->
-        <!--      </button>-->
+      <div class="row" style="width: 101.2%">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" style="border: solid black 1px;margin-top: 3px; background: whitesmoke">
+          <!--      <div id='undoRedoSave'>-->
+          <!--      <button id='undo' type='button'>-->
+          <!--        <img style="height: 23px" src="img/undo.png" alt="">-->
+          <!--      </button>-->
+          <!--      <button id='redo' type='button'>-->
+          <!--        <img style="height: 23px" src="img/redo.png" alt="">-->
+          <!--      </button>-->
 
-        <select name="cars" style="margin-left: 10px">
-          <option selected value="volvo">select</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </select>
+          <select  name="cars"  style="margin-left: 10px">
+            <option selected value="volvo">select</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
 
-        <select name="cars" style="margin-left: 10px; background: whitesmoke">
-          <option selected value="volvo">pause</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </select>
+          <select  name="cars" style="margin-left: 10px; background: whitesmoke">
+            <option selected value="volvo">pause</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+          </select>
+        </div>
       </div>
-    </div>
-
-    <div style="margin-left: -15px;">
-      <textarea name="text" id="summernote"></textarea>
-    </div>
-
-    <div style="align-items: center">
-
-
-      <center> Content length</center>
-    </div>
-    <div style="border: solid black 1px; margin-top: 15px">
-      <input type="text" style="width: 100%; padding-bottom: 3px">
-    </div>
-
-    <div>
-      <center> Your sentence contains 0 words. Your sentence is short. your content will be big on the slide.</center>
-    </div>
-
-    <!--    <div style="margin-left: 73px; margin-top: 13px">-->
-
-    <!--    </div>-->
 
     <div class="row">
-
-      <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
-
-        <center><u>Language</u></center>
-        <div style="margin-left: 73px;">
-          <img src="" alt="">
-
-          <select class="selectpicker countrypicker"
-                  style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
-            <option selected value="select">select</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-
-          </select>
-
-        </div>
-
-
+    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div style="margin-left: -12px;">
+        <textarea name="text" id="summernote"></textarea>
       </div>
-
-
-      <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
-
-        <center><u>Voice 1</u></center>
-        <div style="margin-left: 73px;">
-          <img src="" alt="">
-
-          <select class="selectpicker countrypicker"
-                  style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
-            <option selected value="select">select</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-
-          </select>
-
-        </div>
-
-
-      </div>
-
-      <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
-
-        <center><u>Voice 2</u></center>
-        <div style="margin-left: 73px;">
-          <img src="" alt="">
-
-          <select class="selectpicker countrypicker"
-                  style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
-            <option selected value="select">select</option>
-            <option value="saab">Saab</option>
-            <option value="opel">Opel</option>
-            <option value="audi">Audi</option>
-
-          </select>
-
-        </div>
-
-
-      </div>
-
+    </div>
     </div>
 
+      <div  style="align-items: center">
 
-    <div class="jumbotron" style="margin-top: 8px">
+
+        <center> Content length</center>
+      </div>
+      <div style="border: solid black 1px; margin-top: 15px">
+        <input type="text" style="width: 100%; padding-bottom: 3px">
+      </div>
+
+      <div style="margin-bottom: 32px">
+        <center> Your sentence contains 0 words. Your sentence is short. your content will be big on the slide.</center>
+      </div>
+
+      <!--    <div style="margin-left: 73px; margin-top: 13px">-->
+
+      <!--    </div>-->
 
       <div class="row">
 
         <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
 
-          <center><u>Speech the Text</u></center>
-          <div style="margin-left: 120px;margin-top: 10px">
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider round"></span>
-            </label>
+          <center><u>Language</u></center>
+          <div>
+            <img src="img/language.png" style="width: 35%;margin-left:-16px;margin-right:15px " alt="">
+
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;margin-left: -43px">
+              <option selected value="select">select</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+
+            </select>
 
           </div>
 
@@ -492,12 +397,17 @@
 
         <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
 
-          <center><u>Audio file only</u></center>
-          <div style="margin-left: 120px;margin-top: 10px">
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider round"></span>
-            </label>
+          <center><u>Voice 1</u></center>
+          <div style="margin-left: 9px;">
+            <img src="img/boy.png" style="width: 15%" alt="">
+
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
+              <option selected value="select">select</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+
+            </select>
 
           </div>
 
@@ -506,12 +416,17 @@
 
         <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
 
-          <center><u>Display the text</u></center>
-          <div style="margin-left: 125px;margin-top: 10px">
-            <label class="switch">
-              <input type="checkbox" checked>
-              <span class="slider round"></span>
-            </label>
+          <center><u>Voice 2</u></center>
+          <div style="margin-left: 4px;">
+            <img src="img/girl.png" style="width: 15%" alt="">
+
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;margin-left: 2px;">
+              <option selected value="select">select</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi">Audi</option>
+
+            </select>
 
           </div>
 
@@ -521,14 +436,67 @@
       </div>
 
 
-    </div>
+
+
+
+      <div class="jumbotron" style="margin-top: 78px;padding: 30px">
+
+        <div class="row">
+
+          <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+            <center><u>Speech the Text</u></center>
+            <div style="margin-left: 120px;margin-top: 10px">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+            <center><u>Audio file only</u></center>
+            <div style="margin-left: 120px;margin-top: 10px">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
+
+            <center><u>Display the text</u></center>
+            <div style="margin-left: 125px;margin-top: 10px">
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+              </label>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+      </div>
 
 
     <script>
       $('#summernote').summernote({
 
         height: 50,
-        width: 1140,
+
         popover: {
 
           air: [
@@ -564,16 +532,8 @@
             Text Shadow</span>
       </div>
       <div class="col-sm-6 col-xs-6 col-lg-6 col-xl-6 col-md-6 col-xl-6">
-        <select class="selectpicker countrypicker"
-                style="width: 53px;border: solid black 1px;height: 28px;margin-top: 12px; margin-left: -20px;">
-          <option selected value="select">10%</option>
-          <option value="saab">20%</option>
-          <option value="saab">40%</option>
-          <option value="saab">60%</option>
-          <option value="saab">80%</option>
-          <option value="saab">100%</option>
-        </select>
-        Background Opacity
+        <input type="color"><span style="padding-left: 35px;margin-top: 50px;font-size: 15px">
+    Background Opacity</span>
       </div>
 
       <!---your logo-->
@@ -834,7 +794,7 @@
         </style>
 
         <form id="file-upload-form" action="">
-          <label id="file-drag">
+          <label  id="file-drag">
             Select a file to upload
             <br/>OR
             <br/>Drag a file into this box
@@ -1254,7 +1214,7 @@
 
 
     var child = 1;
-    var length = $("section").length -2;
+    var length = $("section").length - 1;
     $("#prev").addClass("disabled");
     $("#submit").addClass("disabled");
 
