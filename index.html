@@ -64,13 +64,13 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #0d6efd;
     -webkit-transition: .4s;
     transition: .4s;
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #f8f9fa;
   }
 
 
@@ -318,7 +318,7 @@
       </div>
 
     </div>
-      <div class="row">
+      <div class="row" style="width: 101.2%">
         <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" style="border: solid black 1px;margin-top: 3px; background: whitesmoke">
           <!--      <div id='undoRedoSave'>-->
           <!--      <button id='undo' type='button'>-->
@@ -344,9 +344,13 @@
         </div>
       </div>
 
-      <div style="margin-left: -15px;">
+    <div class="row">
+    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div style="margin-left: -12px;">
         <textarea name="text" id="summernote"></textarea>
       </div>
+    </div>
+    </div>
 
       <div  style="align-items: center">
 
@@ -357,7 +361,7 @@
         <input type="text" style="width: 100%; padding-bottom: 3px">
       </div>
 
-      <div>
+      <div style="margin-bottom: 32px">
         <center> Your sentence contains 0 words. Your sentence is short. your content will be big on the slide.</center>
       </div>
 
@@ -370,10 +374,10 @@
         <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
 
           <center><u>Language</u></center>
-          <div style="margin-left: 73px;">
-            <img src="" alt="">
+          <div>
+            <img src="img/language.png" style="width: 35%;margin-left:-16px;margin-right:15px " alt="">
 
-            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;margin-left: -43px">
               <option selected value="select">select</option>
               <option value="saab">Saab</option>
               <option value="opel">Opel</option>
@@ -390,8 +394,8 @@
         <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
 
           <center><u>Voice 1</u></center>
-          <div style="margin-left: 73px;">
-            <img src="" alt="">
+          <div style="margin-left: 9px;">
+            <img src="img/boy.png" style="width: 15%" alt="">
 
             <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
               <option selected value="select">select</option>
@@ -409,10 +413,10 @@
         <div class="col-sm-4 col-xs-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" style="margin-top: 3px; ">
 
           <center><u>Voice 2</u></center>
-          <div style="margin-left: 73px;">
-            <img src="" alt="">
+          <div style="margin-left: 4px;">
+            <img src="img/girl.png" style="width: 15%" alt="">
 
-            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;">
+            <select class="selectpicker countrypicker" style="width: 192px;border: solid black 1px;height: 34px;margin-top: 12px;margin-left: 2px;">
               <option selected value="select">select</option>
               <option value="saab">Saab</option>
               <option value="opel">Opel</option>
@@ -431,7 +435,7 @@
 
 
 
-      <div class="jumbotron" style="margin-top: 8px">
+      <div class="jumbotron" style="margin-top: 78px;padding: 30px">
 
         <div class="row">
 
@@ -488,7 +492,7 @@
       $('#summernote').summernote({
 
         height: 50,
-        width: 1140,
+
         popover: {
 
           air: [
@@ -786,7 +790,7 @@
         </style>
 
         <form id="file-upload-form" action="">
-          <label for="" id="file-drag">
+          <label  id="file-drag">
             Select a file to upload
             <br/>OR
             <br/>Drag a file into this box
